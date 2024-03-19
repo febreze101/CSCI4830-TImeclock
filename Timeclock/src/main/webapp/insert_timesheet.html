@@ -1,0 +1,61 @@
+<html>
+<head>
+<style>
+header {
+	background-color: black;
+	color: white;
+	text-align: center;
+	padding: 5px;
+}
+
+nav {
+	line-height: 30px;
+	background-color: #eeeeee;
+	height: 300px;
+	width: 150px;
+	float: left;
+	padding: 5px;
+}
+
+section {
+	width: 350px;
+	float: left;
+	padding: 10px;
+}
+
+footer {
+	background-color: black;
+	color: white;
+	clear: both;
+	text-align: center;
+	padding: 5px;
+}
+</style>
+</head>
+
+<body>
+	<header>
+		<h1>Insert Data</h1>
+	</header>
+
+	<nav>
+		<a href="/Timeclock/search_timesheet.html">Search Timesheet</a> <br>
+	</nav>
+
+	<section>
+		<h1>User Input</h1>
+
+		<form action="InsertTimeclock" method="POST">
+
+			First/Last Name: <input type="text" name="name"> <br />
+			Clock-in: <input type="text" name="clockIn"> <br />
+			Clock-out: <input type="text" name="clockOut"> <br /> Date: <input
+				type="date" name="date"> <br /> <input type="submit"
+				value="Submit" />
+		</form>
+
+	</section>
+
+	<footer> Copyright </footer>
+</body>
+</html>
